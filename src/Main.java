@@ -15,7 +15,7 @@ public class Main {
 Объявите переменную clientOS, которая равна 0 или 1 (0 — iOS, 1 — Android).*/
         int clientOS=1;
         int OSForIOS=0;
-        int OSForAndroid=2;
+        int OSForAndroid=1;
         if(clientOS==OSForIOS){
             System.out.println("Установите версию приложения для iOS по ссылке...");
         }
@@ -35,7 +35,7 @@ public class Main {
 Для года создания телефона используйте переменную clientDeviceYear, в которой необходимо указать 2015 год.*/
 
         int clientDeviseYear=2015;
-        int yearPhone=2017;
+        int yearPhone=2012;
         if(clientOS==OSForIOS&&yearPhone<clientDeviseYear){
             System.out.println("Установите облегченную версию приложения для iOS по ссылке...");
         } else if (clientOS==OSForIOS&&yearPhone>=clientDeviseYear) {
@@ -60,15 +60,11 @@ public class Main {
         int year=2027;
         int startLeapYear=1586;
         int missedYears=4;
-        if(year>=startLeapYear) {
-            if (year % 4 == 0) {
-                System.out.println("это високосный год");
-            } else {
-                System.out.println("это не високосный год");
-            }
+        if(year>=startLeapYear&&year%4==0&&year%100!=0) {
+            System.out.println("это високосный год");
         }
         else {
-            System.out.println("Год должен быть больше, чем 1584");
+            System.out.println("это не високосный год");
         }
         System.out.println("==========================");
 /*Задача 4
