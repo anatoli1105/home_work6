@@ -60,7 +60,7 @@ public class Main {
         int year=2027;
         int startLeapYear=1586;
         int missedYears=4;
-        if(year>=startLeapYear&&year%4==0&&year%100!=0) {
+        if(year>=startLeapYear&&year%4==0&&year%100!=0||year%400==0) {
             System.out.println("это високосный год");
         }
         else {
